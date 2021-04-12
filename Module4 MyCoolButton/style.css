@@ -1,0 +1,54 @@
+
+html{
+    font-family: sans-serif;
+    font-size: 10px; /*set a base font size to use for easiser calculation*/
+}
+
+
+p{
+    /*spacing
+    Large button with a width of 200px;a reasonable height for a large button;centering the text vertically;
+Centered text.*/
+   width: 200px;
+   height: 55px;
+   margin: 170px auto;
+   padding: 5px;
+   line-height: 2.5;
+   text-align: center;
+
+   /* font
+   A slight increase in font size, to around 17-18 pixel computed style.
+   Use rems. Write a comment about how you worked out the value.
+   1.8rem = 1.8 * the set base font size 10px= 18px  */
+   color: red;
+   font-size: 1.8rem;
+   text-shadow: 3px 3px 3px #000;
+
+   /* border
+   A 1-pixel solid border with a color similar to the base color, but a slightly darker shade.*/
+   border: 1px solid #eb1414;
+   border-radius: 10px;
+
+   /* box background  & gradients
+   A linear semi-transparent black gradient that goes toward the bottom right corner.
+   Make it completely transparent at the start, gradiating to around 0.2 opacity by 30% along,
+   and remaining at the same color until the end.*/
+   background: linear-gradient(to left top, rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+   background-color: red;
+   color: red;
+
+    /* A box shadow
+     Give it one standard box shadow to make the box look slightly raised off the page.*/
+    box-shadow:
+    inset 2px 2px 3px rgba(255,255,255,0.5),
+    inset -2px -2px 3px rgba(0,0,0,0.5),
+           2.5px 2.5px 5px #000;
+  }
+
+
+   /*Make the box have a hover effect which will change its look*/
+    p:hover {
+    background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+    font-size: 20px;
+    font-family: monospace;
+    }
